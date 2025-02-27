@@ -1,62 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        header h1 {
+            color: #007bff;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        /* ナビゲーション右上配置 */
+        .navbar-nav {
+            margin-left: auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Deep Sea Exploration</h1>
-        <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#species">Species</a></li>
-            <li><a href="#expeditions">Expeditions</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="about">
-        <div class="container">
-            <h2>About Deep Sea Exploration</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum nisi eu mauris rutrum, non efficitur elit interdum. Curabitur semper turpis id tristique mattis. Vestibulum ac dui non massa tempus ultrices. Nulla facilisi. Proin tincidunt velit ut velit auctor malesuada.</p>
-            <p>Sed finibus congue diam, in dictum mauris aliquam in. Aliquam interdum elit sit amet tellus efficitur, vitae bibendum odio semper. Aenean lobortis neque non facilisis finibus. Donec a finibus nisl.</p>
+    <!-- ナビゲーションバー（右上配置） -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">自己紹介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">コンタクト</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">過去作品</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <div class="container">
+        <header class="text-center">
+            <h1>トップページ</h1>
+            <p class="lead">私のポートフォリオへようこそ！</p>
+        </header>
+
+        <section>
+            <h2>概要</h2>
+            <p>これはポートフォリオサイトのトップページです。左のナビゲーションから他のページにもアクセスできます。</p>
+            <p>このサイトでは、私の過去の作品や自己紹介、SNSリンクなどを紹介しています。</p>
         </section>
 
-        <section id="species">
-        <div class="container">
-            <h2>Deep Sea Species</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum nisi eu mauris rutrum, non efficitur elit interdum. Curabitur semper turpis id tristique mattis. Vestibulum ac dui non massa tempus ultrices. Nulla facilisi. Proin tincidunt velit ut velit auctor malesuada.</p>
-            <p>Sed finibus congue diam, in dictum mauris aliquam in. Aliquam interdum elit sit amet tellus efficitur, vitae bibendum odio semper. Aenean lobortis neque non facilisis finibus. Donec a finibus nisl.</p>
-        </div>
+        <section>
+            <h2>最新のプロジェクト</h2>
+            <p>最近開発したアプリケーションやウェブサイトについて簡単に紹介します。</p>
+            <ul>
+                <li>To-Doアプリ: ユーザーがタスクを管理できるシンプルなアプリケーション。</li>
+                <li>ポートフォリオサイト: 自分の作品やスキルを紹介するためのウェブサイト。</li>
+                <li>カスタムCMS: 特定の業務に特化したコンテンツ管理システム。</li>
+            </ul>
         </section>
 
-        <section id="expeditions">
-        <div class="container">
-            <h2>Expeditions</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum nisi eu mauris rutrum, non efficitur elit interdum. Curabitur semper turpis id tristique mattis. Vestibulum ac dui non massa tempus ultrices. Nulla facilisi. Proin tincidunt velit ut velit auctor malesuada.</p>
-            <p>Sed finibus congue diam, in dictum mauris aliquam in. Aliquam interdum elit sit amet tellus efficitur, vitae bibendum odio semper. Aenean lobortis neque non facilisis finibus. Donec a finibus nisl.</p>
-        </div>
+        <section>
+            <h2>スキルセット</h2>
+            <p>私のスキルセットは以下の通りです。</p>
+            <ul>
+                <li>バックエンド: Laravel, Node.js, PHP, MySQL</li>
+                <li>フロントエンド: React, HTML, CSS, JavaScript</li>
+                <li>クラウド: AWS, Docker</li>
+                <li>CI/CD: GitLab CI, Jenkins</li>
+            </ul>
         </section>
 
-        <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum nisi eu mauris rutrum, non efficitur elit interdum. Curabitur semper turpis id tristique mattis. Vestibulum ac dui non massa tempus ultrices. Nulla facilisi. Proin tincidunt velit ut velit auctor malesuada.</p>
-            <p>Sed finibus congue diam, in dictum mauris aliquam in. Aliquam interdum elit sit amet tellus efficitur, vitae bibendum odio semper. Aenean lobortis neque non facilisis finibus. Donec a finibus nisl.</p>
-        </div>
-        </section>
-    </main>
+        <footer class="text-center">
+            <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
+        </footer>
+    </div>
 
-    <footer>
-        <div class="container">
-        <p>&copy; 2023 Deep Sea Exploration</p>
-        </div>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
